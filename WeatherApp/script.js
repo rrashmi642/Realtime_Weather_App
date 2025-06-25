@@ -18,7 +18,7 @@ form.addEventListener("submit", searchFun);
 
 async function getDataFromApi(target) {
   try {
-    let url = https://api.weatherapi.com/v1/current.json?key=0be1228a43274a17aef153753250606&q=${target}&aqi=no;
+    let url = `https://api.weatherapi.com/v1/current.json?key=0be1228a43274a17aef153753250606&q=${target}&aqi=no`;
 
     const response = await fetch(url);
     // .json will fetch the json data from the response
